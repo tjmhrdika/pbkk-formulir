@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('form', function () {
     return view('form');
 });
 
-Route::post('/', 'App\Http\Controllers\FormController@submit');
-Route::get('/result', 'App\Http\Controllers\FormController@result');
+Route::post('form', 'App\Http\Controllers\FormController@submit');
+Route::get('result', 'App\Http\Controllers\FormController@result');
+Route::get('db', 'App\Http\Controllers\FormController@db');

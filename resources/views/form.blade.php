@@ -12,7 +12,7 @@
         <h1 class="mt-3">Biodata Form</h1>
         <div class="row justify-content-center">
             <div class="col-4">
-                <form action="{{ url('/') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('form') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group mt-3">
                         <label>Name</label>
@@ -51,6 +51,7 @@
                     </div>
                     <button type="submit" class="btn btn-success mt-4">Submit</button>
                 </form>
+                <a href="{{ url('/') }}" class="btn btn-success mt-3">Back</a>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@
                 <div class="card text-bg-dark mt-4">
                     <h5 class="card-header">{{ $key }}</h5>
                     <div class="card-body">
-                    <img src="{{ asset('storage/photos/'.$data) }}" style="max-width: 150px;" class="img-fluid rounded-start" alt="{{ $data }}">
+                    <img src="{{ asset('storage/photos/'.$data) }}" style="max-width: 150px;" class="img-fluid rounded" alt="{{ $data }}">
                     </div>
                 </div>
                 @break
@@ -36,6 +36,7 @@
                 @endforeach
             </div>
         </div>
+        <a href="{{ url('/') }}" class="btn btn-success mt-3">Back</a>
     </div>
 </body>
 </html>
